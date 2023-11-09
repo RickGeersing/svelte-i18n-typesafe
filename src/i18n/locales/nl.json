@@ -1,0 +1,6 @@
+{
+    "welcome": {
+        "title": "Welkom op de website",
+        "description": "Dit is een testproject voor typesafe i18n in SvelteKit"
+    }
+}
