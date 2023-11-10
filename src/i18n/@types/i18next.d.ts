@@ -1,12 +1,12 @@
-import nl from '../locales/nl.json'
-import en from '../locales/en.json'
+import { resources } from ".."
+import type { Writable } from "svelte/store";
+import i18next from "i18next";
+
+export type I18NStore = Writable<typeof i18next>;
+
 
 declare module 'i18next' {
     interface CustomTypeOptions {
-        defaultNS: 'nl'
-        resources: {
-            nl: typeof nl
-            en: typeof en
-        }
+        resources: typeof resources['nl']
     }
 }

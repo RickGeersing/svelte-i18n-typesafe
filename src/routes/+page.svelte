@@ -1,11 +1,9 @@
 <script lang="ts">
+	import type { I18NStore } from '../i18n/@types/i18next';
 	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
 	import { getContext } from 'svelte';
-	import type { WritableTranslation } from '../i18n';
 
-	const i18n = getContext<WritableTranslation>('i18n');
+	const i18n = getContext<I18NStore>('i18n');
 </script>
 
 <svelte:head>
